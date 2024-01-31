@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>JAVASCRIPT</title>
+    <script>
+      //declaration of an array using new keyword
+      let arr = new Array();
+      const n = parseInt(prompt("Enter Array Size", 1));
+      alert("Reading Array Elements");
+      for (let i = 0; i < n; i++) {
+        arr[i] = parseInt(prompt("Enter Element: "));
+      }
+      document.writeln("<u>Displaying Array Elements</u></br>");
+      for (let element of arr) {
+        document.writeln(element);
+      }
+      document.writeln("</br>")
+      const products = new Array("mobile","laptop","watch") //constructer
+      document.writeln("Products Array Length: "+products.length+ "</br>")
+      document.writeln("Products Array Type: "+typeof products+ "</br>")
+      document.writeln("<u>Products Array Elements:</u></br>")
+      for(let element of products){
+        document.writeln(element);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

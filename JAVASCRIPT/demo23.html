@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>JAVASCRIPT</title>
+    <script>
+      function demo1() {
+        document.writeln("I am in DEMO-1<br/>");
+        {
+          var a = 10;
+          document.writeln("Inside the block<br/>");
+          document.writeln("a=" + a + "<br/>");
+        }
+        document.writeln("a=" + a + "<br/>");
+      }
+      function demo2() {
+        document.writeln("I am in DEMO-2<br/>");
+        {
+          let a = 10;
+          document.writeln("Inside the block<br/>");
+          document.writeln("a=" + a + "<br/>");
+        }
+        document.writeln("a=" + a + "<br/>");
+      }
+      function demo3() {
+        document.writeln("I am in DEMO-3<br/>");
+        {
+          const a = 10;
+          document.writeln("Inside the block<br/>");
+          document.writeln("a=" + a + "<br/>"); /// Here a gets the value of 10 as it's block scope
+        }
+        document.writeln("a=" + a + "<br/>"); /// Here a doesn't gets the value of 10 as it's block scope
+      }
+      demo1();
+      //demo2()
+      demo3();
+    </script>
+  </head>
+  <body></body>
+</html>
